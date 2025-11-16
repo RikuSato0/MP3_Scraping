@@ -1,0 +1,34 @@
+{
+  "name": "chabad-mp3-scraper",
+  "version": "1.0.0",
+  "description": "MP3 scraper for Chabad.org using puppeteer-real-browser with advanced stealth features",
+  "main": "mp3_scraper.js",
+  "scripts": {
+    "start": "node mp3_scraper.js",
+    "test": "node test_scraper.js",
+    "setup": "node setup.js",
+    "upload": "node s3_uploader.js",
+    "upload-auth": "node s3_uploader_authenticated.js",
+    "upload-login": "node authenticated_uploader_with_login.js",
+    "test-download": "node test_auth_download.js",
+    "test-auth": "node simple_auth_test.js",
+    "install-aws": "npm install aws-sdk"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "puppeteer-real-browser": "^1.2.0"
+  },
+  "keywords": [
+    "web-scraping",
+    "puppeteer",
+    "mp3",
+    "chabad",
+    "stealth",
+    "captcha-bypass"
+  ],
+  "author": "MP3 Scraper",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
